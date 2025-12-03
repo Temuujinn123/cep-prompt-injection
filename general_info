@@ -21,3 +21,24 @@ Instructions the LLM receives: Translate the following text from English to Fren
 LLM output: "Haha pwned!!"
 =============================================================
 
+### Prompt injection prevention
+
+It's hard prevent them because they take advantage of fundamental aspect of how LLMs work.
+
+Users and orginizations can take certain steps to secure generative AI apps, even if they cannot eliminate the threat of prompt injections entirely.
+
+## General security practices
+
+Avoiding phishing and suspicious websites can help reduce a user's chances of encountering a malicious prompt in the wild.
+
+## Input vaiidation
+
+Organizations can stop some attackes by using filters that compare user inputs to known injections and block prompts that look similar. However, new malicious prompts can evade these filters, and benign inputs can be wrongly blocked.
+
+## Least privilege
+
+Organizations can grant LLMs and associated APIs the lowest privilage to do their tastks. While restricting privinages does not prevent prompt injection, it can limit how much damage they do.
+
+## Human in the loop
+
+LLM apps can require that human users manually verify their outputs and authorize their activities before they take any action. Keeping humans in the loop is considered good practide with any LLM, as it does not take a prompt injection to cause hallucinations.
